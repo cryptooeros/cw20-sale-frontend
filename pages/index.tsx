@@ -115,12 +115,12 @@ const Home: NextPage = () => {
       walletAddress, // sender address
       PUBLIC_TOKEN_SALE_CONTRACT, // token sale contract
       { "buy": {
-        "denom": "ujunox",
+        "denom": "ujuno",
         "price": "100"
       } }, // msg
       defaultFee,
       undefined,
-      [coin(parseInt(convertDenomToMicroDenom(purchaseAmount), 10), 'ujunox')]
+      [coin(parseInt(convertDenomToMicroDenom(purchaseAmount), 10), 'ujuno')]
     ).then((response) => {
       setPurchaseAmount('')
       setLoadedAt(new Date())
